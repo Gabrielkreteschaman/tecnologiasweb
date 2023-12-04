@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <!-- Último CSS compilado e minificado -->   
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- JavaScript compilado mais recente -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body> 
+
+    <!-- Container abrigará o logotipo do Sistema -->
+    <div class="container-fluid text-center" style="margin-top: 30px; margin-bottom: 30px;">
+      <img src="img/cntgato.png" width="120px" height="90px" class="rounded mx-auto d-block" alt="Cinque Terre">
+    </div>
+
+    <!-- Aqui ficara Barra de navegaÇão do sistema -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color:black; margin-bottom: 30px;">
+        <div class="container-fluid" data-bs-theme="dark">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Login</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="formLogin.html">Login</a></li>
+                  <li><a class="dropdown-item" href="cadastrar.html">cadastrar</a></li>
+                </ul>
+              </li>
+             
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Pagamento</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="formPagamento.html">Formas de pagamento</a></li>
+                    <li><a class="dropdown-item active" href="Carrinho.html">Carrinho</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Assinaturas</a></li>
+                  </ul>
+                </li>
+             
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Digite Aqui">
+              <button class="btn btn-primary" type="button">Procurar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-bottom: 30px; margin-bottom: 100px;">
+
+        <div class="alert alert-info">
+           Carrinho, aqui você pode <b>editar e adicionar suas compras</b>
+        </div>
+
+        <div class="container mt-3">
+            <h1>Carrinho:</h2>          
+            <table class="table table-dark table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th>Jogo</th>
+                  <th>Nome</th>
+                  <th>Tipo</th>
+                  <th>Versão</th>
+                  <th>Peso</th>    
+                  <th>Preço</th>                
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="img/witcher.jfif" width="50px" height="50px">
+                  </td>
+                  <td>The Witcher 3</td>
+                  <td>RPG de Ação</td>
+                  <td>PS4/PS5</td>
+                  <td>32 GB</td>
+                  <td>R$ 264,90</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="img/rdrjjj.jfif" width="50px" height="50px">
+                  </td>
+                  <td>Red Dead Redemption 2</td>
+                  <td>Ação-Aventura</td>
+                  <td>PS4</td>
+                  <td>99 GB</td>
+                  <td>R$ 248,90</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="img/the last.png" width="50px" height="50px">
+                  </td>
+                  <td>The Last Of Us 2</td>
+                  <td>Ação-Aventura e Sobrevivência</td>
+                  <td>PS4/PS5</td>
+                  <td>78 GB</td>
+                  <td>R$ 199,00</td>
+                </tr>               
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Valor total: <span class="badge bg-secondary"> R$ 712,80 </span></h2>
+
+          <button type="button" class="btn btn-primary btn-lg">Comprar</button><br><br>
+
+          <p>
+            Adicionar algo mais ao Carrinho? <a href="#" title="Adicionar">Clique aqui!</a>&nbsp<i class="bi bi-emoji-smile"></i>
+          </p>
+      
+    </div>
+
+    <!-- Container que abrigará o rodapé da página (FIXO) -->
+    <div class="container-fluid text-center fixed-bottom text-light" style="background-color:black;">
+        <p>
+            Interfaces web desenvolvidas por
+            <b>
+                <a href="mailto:gabriel.kreoliveira@gmail.com">
+                    gabriel.kreoliveira@gmail.com
+                </a>
+            </b>
+        </p>
+    </div>
+
+</body>
+</html>
+</html>
